@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { getUser } from './services/userAPI';
-import Loading from './pages/Loading';
 
 class Header extends Component {
   constructor() {
     super();
     this.state = {
       userName: '',
-      isLoading: false,
     };
   }
 
@@ -16,23 +14,25 @@ class Header extends Component {
     const { name } = await getUser();
     this.setState({
       userName: name,
-      isLoading: true,
     });
   }
 
   render() {
-    const { userName, isLoading } = this.state;
+    const { userName } = this.state;
     return (
       <header data-testid="header-component">
-        {isLoading ? (
-          <Loading />
-        ) : (
-          <p data-testid="header-user-name">{`Hello, ${userName}`}</p>
-        )}
+        <p data-testid="header-user-name">{`Hello, ${userName}`}</p>
+
         <nav>
-          <Link to="/search" data-testid="link-to-search" />
-          <Link to="/favorites" data-testid="link-to-favorites" />
-          <Link to="/profile" data-testid="link-to-profile" />
+          <Link to="/search" data-testid="link-to-search">
+            SEARCH
+          </Link>
+          <Link to="/favorites" data-testid="link-to-favorites">
+            FAVORITES
+          </Link>
+          <Link to="/profile" data-testid="link-to-profile">
+            PROFILE
+          </Link>
         </nav>
       </header>
     );
