@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 
 class MusicCard extends Component {
   render() {
-    const { trackName, previewUrl, collectionName } = this.props;
+    const { trackName, previewUrl } = this.props;
     return (
       <section>
         <div>
           <img src="" alt="" />
-          <h3>{collectionName}</h3>
           <h4>{trackName}</h4>
           <audio data-testid="audio-component" src={ previewUrl } controls>
             <track kind="captions" />
@@ -23,6 +22,5 @@ class MusicCard extends Component {
 MusicCard.propTypes = {
   trackName: PropTypes.string.isRequired,
   previewUrl: PropTypes.string.isRequired,
-  collectionName: PropTypes.string.isRequired,
 };
 export default MusicCard;

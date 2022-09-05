@@ -27,13 +27,11 @@ class Album extends Component {
     const { id } = match.params;
     const responseAPI = await getMusics(id);
     console.log(responseAPI);
-    const songsAPI = responseAPI.filter((song) => song.wrapperType === 'track');
-    console.log(songsAPI);
     this.setState({
       albumName: responseAPI[0].collectionName,
       singerName: responseAPI[0].artistName,
       imageAlbum: responseAPI[0].artworkUrl100,
-      listSongs: songsAPI,
+      listSongs: responseAPI,
     });
   };
 
@@ -50,14 +48,22 @@ class Album extends Component {
             <h3 data-testid="album-name">{albumName}</h3>
             <h4 data-testid="artist-name">{singerName}</h4>
             <div>
-              {listSongs.map((song) => (
-                <MusicCard
-                  key={ song.trackId }
-                  trackName={ song.trackName }
-                  previewUrl={ song.previewUrl }
-                  collectionName={ song.collectionName }
-                  musicPreview={ song }
-                />
+              {listSongs.slice(1).map((song) => (
+                <div key={ song.trackId }>
+                  <MusicCard
+                    trackName={ song.trackName }
+                    previewUrl={ song.previewUrl }
+                    musicPreview={ song }
+                  />
+
+                  <label
+                    htmlFor="input-favorite"
+                    data-testid={ `checkbox-music-${song.trackId}` }
+                  >
+                    Favorita
+                    <input type="checkbox" />
+                  </label>
+                </div>
               ))}
             </div>
           </section>
