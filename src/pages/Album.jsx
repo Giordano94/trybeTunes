@@ -13,11 +13,12 @@ class Album extends Component {
       albumName: '',
       singerName: '',
       imageAlbum: '',
-      isLoading: true,
+      isLoading: false,
     };
   }
 
   async componentDidMount() {
+    this.setState({ isLoading: true });
     await this.getSongsAlbum();
     this.setState({ isLoading: false });
   }
@@ -50,19 +51,7 @@ class Album extends Component {
             <div>
               {listSongs.slice(1).map((song) => (
                 <div key={ song.trackId }>
-                  <MusicCard
-                    trackName={ song.trackName }
-                    previewUrl={ song.previewUrl }
-                    musicPreview={ song }
-                  />
-
-                  <label
-                    htmlFor="input-favorite"
-                    data-testid={ `checkbox-music-${song.trackId}` }
-                  >
-                    Favorita
-                    <input type="checkbox" />
-                  </label>
+                  <MusicCard song={ song } />
                 </div>
               ))}
             </div>
