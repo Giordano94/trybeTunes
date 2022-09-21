@@ -26,19 +26,19 @@ class MusicCard extends Component {
   };
 
   // feito com a ajuda do monitor Bruno
-  handleFavoriteSong = ({ target }) => {
-    const { song } = this.props;
-    this.setState({ isLoading: true }, async () => {
-      if (target.checked) {
-        await addSong(song);
-        await this.setFavorites();
-      } else {
-        await removeSong(song);
-        await this.setFavorites();
-      }
+  handleFavoriteSong = async ({ target }) => {
+    const { song, updateFavoriteSongs } = this.props;
+    this.setState({ isLoading: true });
+    if (target.checked) {
+      await addSong(song);
+      await this.setFavorites();
+    } else {
+      await removeSong(song);
+      updateFavoriteSongs();
+      await this.setFavorites();
+    }
 
-      this.setState({ isLoading: false });
-    });
+    this.setState({ isLoading: false });
   };
 
   render() {
@@ -56,9 +56,10 @@ class MusicCard extends Component {
               O seu navegador não suporta o elemento
               <code>audio</code>
             </audio>
-            <label htmlFor="inputFavorite" id="inputFavorite">
+            <label htmlFor="Favorita">
               Favorita
               <input
+                id="Favorita"
                 type="checkbox"
                 name="favoriteIsChecked"
                 data-testid={ `checkbox-music-${song.trackId}` }
@@ -75,6 +76,7 @@ class MusicCard extends Component {
   }
 }
 MusicCard.propTypes = {
+  updateFavoriteSongs: PropTypes.func.isRequired,
   song: PropTypes.shape({
     trackName: PropTypes.string,
     previewUrl: PropTypes.string,

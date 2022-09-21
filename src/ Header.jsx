@@ -30,7 +30,7 @@ class Header extends Component {
         {isLoading ? (
           <Loading />
         ) : (
-          <h3 data-testid="header-user-name">{`Hello, ${userName}`}</h3>
+          <h3 data-testid="header-user-name">{userName}</h3>
         )}
         <nav>
           <Link to="/search" data-testid="link-to-search">
