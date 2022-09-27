@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import Loading from "./Loading";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Loading from './Loading';
 import {
   addSong,
   getFavoriteSongs,
   removeSong,
-} from "../services/favoriteSongsAPI";
+} from '../services/favoriteSongsAPI';
 
 class MusicCard extends Component {
   constructor() {
@@ -53,8 +53,9 @@ class MusicCard extends Component {
         ) : (
           <div>
             <h4>{song.trackName}</h4>
-            <audio data-testid="audio-component" src={song.previewUrl} controls>
-              <track kind="captions" />O seu navegador não suporta o elemento
+            <audio data-testid="audio-component" src={ song.previewUrl } controls>
+              <track kind="captions" />
+              O seu navegador não suporta o elemento
               <code>audio</code>
             </audio>
             <label htmlFor="Favorita">
@@ -63,11 +64,11 @@ class MusicCard extends Component {
                 id="Favorita"
                 type="checkbox"
                 name="favoriteIsChecked"
-                data-testid={`checkbox-music-${song.trackId}`}
-                checked={favoritesSongs.some(
-                  (music) => music.trackId === song.trackId
-                )}
-                onChange={this.handleFavoriteSong}
+                data-testid={ `checkbox-music-${song.trackId}` }
+                checked={ favoritesSongs.some(
+                  (music) => music.trackId === song.trackId,
+                ) }
+                onChange={ this.handleFavoriteSong }
               />
             </label>
           </div>
