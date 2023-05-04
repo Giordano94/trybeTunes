@@ -15,6 +15,8 @@ class Login extends Component {
 
   handleChange = ({ target: { name, value } }) => {
     this.setState({ [name]: value }, () => {
+      console.log(name);
+      console.log(value);
       const { loginName } = this.state;
       const MAX_CHARACTER = 3;
       const buttonIsDisabled = loginName.length < MAX_CHARACTER;
