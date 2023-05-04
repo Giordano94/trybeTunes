@@ -58,7 +58,7 @@ project-trybetunes/
    App.js
    index.css
    index.js
-   
+ </pre>
    <ul>
   <li>O arquivo <code>README.md</code> é o arquivo que você está lendo agora.</li>
   <li>O diretório <code>node_modules/</code> contém as dependências do projeto, que são instaladas através do comando <code>npm install</code>.</li>
