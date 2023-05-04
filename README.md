@@ -26,7 +26,7 @@
 
 <ul>
    <li>Pesquisar musicas</li>
-   <li>Listar albums de artistas</li>
+   <li>Listar albuns de artistas</li>
   <li>Visualizar o perfil do usuário</li>
   <li>Adicionar musicas a lista de favoritas</li>
   <li>Remover musicas da lista de favoritas</li>
