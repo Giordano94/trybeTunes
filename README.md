@@ -1,7 +1,7 @@
 <h1>README em Construção</h1>
 <h1>Project TrybeTunes</h1>
 
-<p>TrybeTunes é uma aplicação de serviço digital de música que permite que os usuários tenham acesso instantâneo a uma vasta biblioteca de músicas de diferentes gêneros e artistas. Com o TrybeTunes, os usuários podem descobrir novas músicas e ouvir suas músicas favoritas de qualquer lugar. Este Projeto foi construído durante o módulo de Front-end no curso da Trybe. </p>
+<p>TrybeTunes é uma aplicação de serviço digital de música que permite que os usuários tenham acesso a uma biblioteca de músicas de diferentes gêneros e artistas. Com o TrybeTunes, os usuários podem descobrir novas músicas e ouvir suas músicas favoritas de qualquer lugar. Este Projeto foi construído durante o módulo de Front-end no curso da Trybe. </p>
 
 <h2>Tecnologias Utilizadas</h2>
 
@@ -41,20 +41,7 @@ project-trybetunes/
   public/   
   src/
    pages/
-    Album.jsx
-    Favorites.jsx
-    Loading.jsx
-    Login.jsx
-    MusicCard.jsx
-    NotFound.jsx
-    Profile.jsx
-    ProfileEdit.jsx
-    Search.jsx
    services/
-    favoriteSongsAPI.js
-    musicsAPI.js
-    searchAlbumsAPI.js
-    userAPI.js
    App.js
    index.css
    index.js
