@@ -1,14 +1,13 @@
-<h1>Meu Projeto React</h1>
+<h1>README em Construção</h1>
+<h1>Project TrybeTunes</h1>
 
-<p>Este é um projeto desenvolvido usando React. É uma aplicação web que permite ao usuário realizar tarefas e organizar seu dia a dia.</p>
+<p>TrybeTunes é uma aplicação de serviço digital de música que permite que os usuários tenham acesso instantâneo a uma vasta biblioteca de músicas de diferentes gêneros e artistas. Com o TrybeTunes, os usuários podem descobrir novas músicas e ouvir suas músicas favoritas de qualquer lugar. Este Projeto foi construído durante o módulo de Front-end no curso da Trybe. </p>
 
 <h2>Tecnologias Utilizadas</h2>
 
 <ul>
   <li>React</li>
   <li>React Router</li>
-  <li>Axios</li>
-  <li>Bootstrap</li>
 </ul>
 
 <h2>Como Rodar o Projeto</h2>
@@ -37,35 +36,34 @@
 <p>O projeto está organizado da seguinte maneira:</p>
 
 <pre>
-meu-projeto-react/
+project-trybetunes/
   README.md
   node_modules/
   package.json
-  public/
-    index.html
-    favicon.ico
+  public/   
   src/
-    App.js
-    index.js
-    components/
-      Task.js
-      TaskList.js
-      TaskForm.js
-    styles/
-      App.css
-      Task.css
-</pre>
-
-<ul>
+   pages/
+    Album.jsx
+    Favorites.jsx
+    Loading.jsx
+    Login.jsx
+    MusicCard.jsx
+    NotFound.jsx
+    Profile.jsx
+    ProfileEdit.jsx
+    Search.jsx
+   services/
+    favoriteSongsAPI.js
+    musicsAPI.js
+    searchAlbumsAPI.js
+    userAPI.js
+   App.js
+   index.css
+   index.js
+   
+   <ul>
   <li>O arquivo <code>README.md</code> é o arquivo que você está lendo agora.</li>
   <li>O diretório <code>node_modules/</code> contém as dependências do projeto, que são instaladas através do comando <code>npm install</code>.</li>
   <li>O arquivo <code>package.json</code> contém informações sobre o projeto, incluindo suas dependências.</li>
-  <li>O diretório <code>public/</code> contém o arquivo <code>index.html</code>, que é a página HTML principal do projeto.</li>
-  <li>O diretório <code>src/</code> contém o código-fonte do projeto.</li>
-  <li>O arquivo <code>App.js</code> é o componente principal da aplicação.</li>
-  <li>O arquivo <code>index.js</code> é o arquivo de ponto de entrada do projeto.</li>
-  <li>O diretório <code>components/</code> contém os componentes React que compõem a interface do usuário.</li>
-  <li>O diretório <code>styles/</code> contém os arquivos CSS usados para estilizar a aplicação.</li>
-</ul>
+ <ul>
 
-<p>Espero que este exemplo de README.md ajude você a criar um README para seu próprio projeto React!</p>
