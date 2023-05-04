@@ -25,8 +25,11 @@
 <h2>Funcionalidades do Projeto</h2>
 
 <ul>
-  <li>Executar músicas</li>
-  <li>Adicinar musicas favoritas</li>
+   <li>Pesquisar musicas</li>
+   <li>Listar albums de artistas</li>
+  <li>Visualizar o perfil do usuário</li>
+  <li>Adicionar musicas a lista de favoritas</li>
+  <li>Remover musicas da lista de favoritas</li>
 </ul>
 
 <h2>Estrutura do Projeto</h2>
