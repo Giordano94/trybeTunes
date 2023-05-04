@@ -25,10 +25,8 @@
 <h2>Funcionalidades do Projeto</h2>
 
 <ul>
-  <li>Adicionar tarefas</li>
-  <li>Marcar tarefas como concluídas</li>
-  <li>Excluir tarefas</li>
-  <li>Filtrar tarefas por status (concluídas ou pendentes)</li>
+  <li>Executar músicas</li>
+  <li>Adicinar musicas favoritas</li>
 </ul>
 
 <h2>Estrutura do Projeto</h2>
