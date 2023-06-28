@@ -53,6 +53,7 @@ project-trybetunes/
   <li>O arquivo <code>README.md</code> é o arquivo que você está lendo agora.</li>
   <li>O diretório <code>node_modules/</code> contém as dependências do projeto, que são instaladas através do comando <code>npm install</code>.</li>
   <li>O arquivo <code>package.json</code> contém informações sobre o projeto, incluindo suas dependências.</li>
-  <li>pasta <code>pages</code> contém todos os componentes que compões  as paginas do projeto</li>
+  <li>A pasta <code>pages</code> contém todos os componentes que compões  as paginas do projeto</li>
+    <li>A pasta <code>services</code> contém arquivos que fornecem serviços específicos e encapsulam a lógica de negócios do projeto.</li>
  <ul>
 
