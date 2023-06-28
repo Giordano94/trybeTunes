@@ -1,4 +1,4 @@
-<h1>README em Construção</h1>
+
 <h1>Project TrybeTunes</h1>
 
 <p>TrybeTunes é uma aplicação de serviço digital de música que permite que os usuários tenham acesso a uma biblioteca de músicas de diferentes gêneros e artistas. Com o TrybeTunes, os usuários podem descobrir novas músicas e ouvir suas músicas favoritas de qualquer lugar. Este Projeto foi construído durante o módulo de Front-end no curso da Trybe. </p>
