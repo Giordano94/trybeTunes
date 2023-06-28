@@ -25,6 +25,7 @@
 <h2>Funcionalidades do Projeto</h2>
 
 <ul>
+   <li>Fazer login</li>
    <li>Pesquisar musicas</li>
    <li>Listar albuns de artistas</li>
   <li>Visualizar o perfil do usuário</li>
